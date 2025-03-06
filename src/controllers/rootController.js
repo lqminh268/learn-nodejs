@@ -8,10 +8,10 @@ const getRootPath = async (req, res) => {
       ["IGotThePower", "LongAn"]
     );
 
-    console.log();
     res.send(JSON.stringify(results));
   } catch (err) {
     console.log(err);
+    res.send("error");
   }
 };
 
